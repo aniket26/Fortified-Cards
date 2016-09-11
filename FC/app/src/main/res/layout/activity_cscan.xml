@@ -10,7 +10,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/CScan"
+        android:text="Scan your credit/debit card"
         android:id="@+id/txt_CScan"
         android:gravity="center_horizontal"
         android:textColor="#000"
