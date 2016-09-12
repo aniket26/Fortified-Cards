@@ -50,7 +50,7 @@ public class CScan extends AppCompatActivity implements ZXingScannerView.ResultH
         String imei=getCellId();
         Toast.makeText(this, "IMEI No. is " + imei, Toast.LENGTH_LONG).show();
         String[]array_user=getValues(scanString);
-        Toast.makeText(this,array_user[0]+""+array_user[1],Toast.LENGTH_LONG).show();
+        Toast.makeText(this,"IMEI No. is: "+array_user[0]+" "+"& Balance of user is: "+""+array_user[1],Toast.LENGTH_LONG).show();
         Boolean proceed= check(array_user, imei);
 
         if (proceed)
