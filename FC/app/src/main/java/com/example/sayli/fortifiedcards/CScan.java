@@ -1,5 +1,6 @@
 package com.example.sayli.fortifiedcards;
 
+import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.Context;
 import android.content.Intent;
@@ -18,7 +19,7 @@ import java.util.concurrent.ExecutionException;
 import me.dm7.barcodescanner.zxing.ZXingScannerView;
 
 
-public class CScan extends AppCompatActivity implements ZXingScannerView.ResultHandler{
+public class CScan extends Activity implements ZXingScannerView.ResultHandler{
     private ZXingScannerView mScanner;
     public String scanString;
     private static String[]check_imei_static;
@@ -50,7 +51,7 @@ public class CScan extends AppCompatActivity implements ZXingScannerView.ResultH
         String imei=getCellId();
         Toast.makeText(this, "IMEI No. is " + imei, Toast.LENGTH_LONG).show();
         String[]array_user=getValues(scanString);
-        Toast.makeText(this,"IMEI No. is: "+array_user[0]+" "+"& Balance of user is: "+""+array_user[1],Toast.LENGTH_LONG).show();
+        Toast.makeText(this,array_user[0]+""+array_user[1],Toast.LENGTH_LONG).show();
         Boolean proceed= check(array_user, imei);
 
         if (proceed)

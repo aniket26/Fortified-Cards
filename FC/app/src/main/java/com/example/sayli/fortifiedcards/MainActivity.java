@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
             if (isFirstRun)
             {
                 //show tutorial
-                startActivity(new Intent(this, MyIntro.class));
+                startActivity(new Intent(this, Intro1.class));
 
                 //After a person has seen the tutorial at first launch of the app, he/she shouldn't see it again
                 getSharedPreferences("PREFERENCE", MODE_PRIVATE).edit().putBoolean("isfirstrun", false).commit();
@@ -62,7 +62,7 @@ public class MainActivity extends AppCompatActivity {
     {
         if (v == btnHelp)
         {
-            startActivity(new Intent(this, MyIntro.class));
+            startActivity(new Intent(this, Intro1.class));
         }
     }
 }

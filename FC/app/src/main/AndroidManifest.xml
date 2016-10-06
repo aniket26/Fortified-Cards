@@ -19,13 +19,19 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MyIntro" />
-        <activity android:name=".CScan"
-            android:label="Scan the QR Code of your card"/>
-        <activity android:name=".EnterAmount"
-            android:label="Enter the due amount"/>
-        <activity android:name=".VScan"
-            android:label="Scan the vendor's QR Code"/>
+        <activity
+            android:name=".CScan"
+            android:label="Scan the QR Code of your card" />
+        <activity
+            android:name=".EnterAmount"
+            android:label="Enter the due amount" />
+        <activity
+            android:name=".VScan"
+            android:label="Scan the vendor&apos;s QR Code" />
+        <activity android:name=".Intro1" />
+        <activity android:name=".Intro2" />
+        <activity android:name=".Intro3" />
+        <activity android:name=".Intro4"></activity>
     </application>
 
 </manifest>

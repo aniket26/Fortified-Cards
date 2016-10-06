@@ -41,18 +41,15 @@ public class EnterAmount extends AppCompatActivity {
             double due_amt=Double.parseDouble(txt_amount_string);
             bal_vendor=bal_vendor+due_amt;
             bal_user=bal_user-due_amt;
-            Toast.makeText(this, "Vendor Balance: "+bal_vendor + " & " + " Customer Balance: "+bal_user, Toast.LENGTH_SHORT).show();
-            Toast.makeText(this, "Customer Card No is: "+""+c_cc_no+""+" & Vendor Card No is: "+""+v_cc_no,Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Vendor Balance: "+bal_vendor + " & " + " Customer Balance: "+bal_user, Toast.LENGTH_LONG).show();
+            Toast.makeText(this, "Customer Card No"+c_cc_no+"Vendor Card No"+v_cc_no,Toast.LENGTH_LONG).show();
             getAPHPConnection(c_cc_no, v_cc_no, String.valueOf(bal_user), String.valueOf(bal_vendor));
-            Toast.makeText(this,"Transaction Successful", Toast.LENGTH_SHORT).show();
         }
     }
     private void getAPHPConnection(String w, String x, String y, String z) {
         try {
             String t=new APHPConnection().execute(w, x, y, z).get().toString();
-            Toast.makeText(this,"Database updated successfully",Toast.LENGTH_SHORT).show();
-
-
+            Toast.makeText(this,t,Toast.LENGTH_LONG).show();
         } catch (InterruptedException e) {
             e.printStackTrace();
         } catch (ExecutionException e) {
@@ -75,7 +72,7 @@ public class EnterAmount extends AppCompatActivity {
         getMenuInflater().inflate(R.menu.menu_enter__amount, menu);
         return true;
     }
-        @Override
+    @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         // Handle action bar item clicks here. The action bar will
         // automatically handle clicks on the Home/Up button, so long

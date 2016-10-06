@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/scrollView"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#FA7FAE">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FA7FAE"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="sans-serif-thin"
+            android:gravity="center"
+            android:paddingLeft="32dp"
+            android:paddingRight="32dp"
+            android:text="Please note"
+            android:textColor="#000000"
+            android:textSize="28sp"
+            android:layout_marginTop="20dp" />
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:src="@mipmap/warning_icon"
+            android:layout_marginBottom="10dp"
+            android:layout_gravity="center_horizontal" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:paddingLeft="64dp"
+            android:paddingRight="64dp"
+            android:text="1) To find your IMEI number, dial *#06# in your smartphone or else go to Settings > About phone > IMEI number."
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textAlignment="textStart" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:paddingLeft="64dp"
+            android:paddingRight="64dp"
+            android:text="2) If you have dual-sim phone or multiple phones, register all the IMEI numbers with your bank."
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textAlignment="textStart" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:paddingLeft="64dp"
+            android:paddingRight="64dp"
+            android:text="3) Incase of lost/stolen credit/debit card or your phone, contact 1800-xxx-xxxx immediately."
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textAlignment="textStart"
+            android:layout_marginBottom="10dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Next"
+            android:id="@+id/btnNext2"
+            android:layout_margin="10dp"
+            android:layout_gravity="center_horizontal"
+            android:background="#4D4C4C"
+            android:textSize="17sp"
+            android:textColor="#FFFFFF"
+            android:onClick="onNext2"
+            android:layout_marginBottom="40dp" />
+
+    </LinearLayout>
+</ScrollView>
