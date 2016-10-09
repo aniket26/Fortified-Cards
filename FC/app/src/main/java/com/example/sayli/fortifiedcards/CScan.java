@@ -19,7 +19,7 @@ import java.util.concurrent.ExecutionException;
 import me.dm7.barcodescanner.zxing.ZXingScannerView;
 
 
-public class CScan extends Activity implements ZXingScannerView.ResultHandler{
+public class CScan extends AppCompatActivity implements ZXingScannerView.ResultHandler{
     private ZXingScannerView mScanner;
     public String scanString;
     private static String[]check_imei_static;

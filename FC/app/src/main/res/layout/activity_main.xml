@@ -26,9 +26,9 @@
 
     <ImageView
         android:layout_width="match_parent"
-        android:layout_height="300dp"
+        android:layout_height="250dp"
         android:id="@+id/imageView"
-        android:src="@mipmap/main_icon"
+        android:src="@drawable/main"
         android:layout_gravity="center" />
 
     <Button
